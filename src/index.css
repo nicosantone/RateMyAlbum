@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+body {
+  background: linear-gradient(to bottom right, #141e30, #243b55);
+  background-attachment: fixed;
+  color: #fff;
+  min-height: 100vh;
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* NAVBAR BASE */
+nav {
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 1.05rem;
+    border-bottom: 1px solid #222;
+    transition: background-color 0.4s ease, border-color 0.4s ease;
+}
+
+/* Navbar estilo base (siempre igual) */
+.navbar-default {
+    background-color: #1d2f44;
+    backdrop-filter: blur(6px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.35);
+}
+
+nav .logo {
+    font-weight: 700;
+    font-size: 1.3rem;
+    letter-spacing: 0.5px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1.8rem;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+nav ul li a:hover {
+    opacity: 0.7;
+}
+
+.container {
+    margin-top: 20px;
+}
+
+.album-card {
+    margin-bottom: 20px;
+}
+
+.card {
+    background-color: #181818;
+    color: #fff;
+    border: 1px solid #333;
+}
+
+.album-title, .album-artist, .card-title, .card-text {
+    color: #fff;
+}
+
+.rating {
+    display: flex;
+    align-items: center;
+}
+
+.star {
+    font-size: 1.5rem;
+    color: gray;
+    cursor: pointer;
+    transition: color 0.2s;
+}
+
+.star:hover,
+.star[data-selected="true"] {
+    color: gold;
+}
+
+.review-input {
+    margin-top: 10px;
+}
+
+.review-button {
+    margin-top: 10px;
+}
+
+.review-list {
+    margin-top: 10px;
+    list-style-type: none;
+    padding: 0;
+}
+
+.review-item {
+    background-color: #e9ecef;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+
+.form-control, .form-control:focus {
+    background-color: #222;
+    color: #fff;
+    border: 1px solid #444;
+}
+
+.btn-primary {
+    background-color: #fff;
+    color: #000;
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: #e0e0e0;
+    color: #000;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    filter: invert(1);
+}
+
+footer {
+  background-color: #222;
+  color: white;
+  text-align: center;
+  padding: 15px 0;
+  margin-top: 30px;
+  font-size: 1rem;
+}
