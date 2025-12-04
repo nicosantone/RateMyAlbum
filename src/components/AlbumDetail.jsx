@@ -15,7 +15,7 @@ function AlbumDetail() {
   const [editIndex, setEditIndex] = useState(null);
 
   useEffect(() => {
-    fetch(`http://localhost:3001/albums/${id}`)
+    fetch(`https://rma-backend-j9ew.onrender.com/albums/${id}`)
       .then(res => res.json())
       .then(data => {
         setAlbum(data);

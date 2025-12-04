@@ -6,7 +6,7 @@ export default function Project() {
   const [albums, setAlbums] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:3001/albums")
+    fetch("https://rma-backend-j9ew.onrender.com/albums")
       .then(res => res.json())
       .then(data => setAlbums(data))
       .catch(err => console.error("Error cargando álbumes:", err));

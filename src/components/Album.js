@@ -25,7 +25,7 @@ export default function Album() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    fetch(`http://localhost:3001/albums/${albumId}`)
+    fetch(`https://rma-backend-j9ew.onrender.com/albums/${albumId}`)
       .then(res => res.json())
       .then(data => {
         setAlbum(data);
